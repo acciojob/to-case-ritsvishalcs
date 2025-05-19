@@ -1,13 +1,14 @@
 function toCase(text) {
-  // write your code here
-	if (str === "") {
+  // Check for empty string
+  if (text === "") {
     return "-";
   }
-  
-  return str.toLowerCase() + "-" + str.toUpperCase();
+
+  // Return lowercase and uppercase versions joined by a hyphen
+  return text.toLowerCase() + "-" + text.toUpperCase();
 }
 
 // DO not change the code below
-
 const text = prompt("Enter text:");
 alert(toCase(text));
+
